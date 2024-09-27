@@ -16,16 +16,16 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '25256497'))
-API_HASH = environ.get('API_HASH', '7640ddb9e5b9ff423adcab5dd81ae2f2')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+API_ID = int(environ.get('API_ID', '21723836'))
+API_HASH = environ.get('API_HASH', 'f755ab041ac9ab14ab0c25606dd92156')
+BOT_TOKEN = environ.get('BOT_TOKEN', "7402243752:AAEVXvOIkXo9hUACq4BnDlR2kOPd0jFRTck")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 BOT_START_TIME = 'time'
 
-PICS = (environ.get('PICS', 'https://telegra.ph/file/3216b77d353f4812ec654.jpg https://telegra.ph/file/4b80881be0a7d508a0c85.jpg https://telegra.ph/file/79f803e33a91f2c985a05.jpg https://telegra.ph/file/aac100d4b98836b05fbd3.jpg')).split() #SAMPLE PIC
+PICS = (environ.get('PICS', 'https://magandi.onrender.com/YNu9.JPG')).split() #SAMPLE PIC
 NOR_IMG = environ.get("NOR_IMG", "https://te.legra.ph/file/a27dc8fe434e6b846b0f8.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://te.legra.ph/file/6f55d902f9bf2d0afd4bb.mp4")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
@@ -38,7 +38,7 @@ PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', True)) #
 # If PREMIUM_AND_REFERAL_MODE is True Then Fill Below Variable, If Flase Then No Need To Fill.
 REFERAL_COUNT = int(environ.get('REFERAL_COUNT', '5')) # number of referal count
 REFERAL_PREMEIUM_TIME = environ.get('REFERAL_PREMEIUM_TIME', '1month')
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7052947046').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
